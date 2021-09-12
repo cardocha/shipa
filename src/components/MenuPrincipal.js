@@ -10,15 +10,15 @@ export default class MenuPrincipal extends Component {
         const { activeItem } = this.state
 
         return (
-            <Menu >
-                <Menu.Item
-                    name='home'
+            <Menu inverted>
+                <Menu.Item big inverted
+                    icon='home'
                     active={activeItem === 'home'}
                     onClick={this.handleItemClick}
                 />
-                <Menu.Menu position='right'>
-                    <Menu.Item
-                        name='login'
+                <Menu.Menu inverted position='right'>
+                    <Menu.Item big
+                        icon='user'
                         active={activeItem === 'login'}
                         onClick={this.handleItemClick}
                     />

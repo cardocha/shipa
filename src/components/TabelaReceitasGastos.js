@@ -1,18 +1,12 @@
 import React from 'react'
-import { Table, Segment, Label } from 'semantic-ui-react'
+import { Table, Segment, Label, Grid, Icon } from 'semantic-ui-react'
 
 const TabelaReceitasGastos = () => (
-  <Segment.Group horizontal>
-    <Segment>
-      <Label ribbon color='green' basic size='small'>Receitas</Label>
-      <Table celled size='small'>
-        <Table.Header>
-          <Table.Row >
-            <Table.HeaderCell>Descrição</Table.HeaderCell>
-            <Table.HeaderCell>Valor</Table.HeaderCell>
-          </Table.Row>
-        </Table.Header>
-
+  <Grid>
+  <Grid.Row>
+    <Grid.Column width={8}>
+    <Segment inverted>
+      <Table inverted celled>
         <Table.Body>
           <Table.Row>
             <Table.Cell>Teste</Table.Cell>
@@ -21,19 +15,10 @@ const TabelaReceitasGastos = () => (
         </Table.Body>
       </Table>
     </Segment>
-    <Segment>
-      <Label color='red' basic size='small' ribbon>Gastos</Label>
-      <Table celled size='small'>
-        <Table.Header>
-          <Table.Row >
-            <Table.HeaderCell>Descrição</Table.HeaderCell>
-            <Table.HeaderCell>Tipo</Table.HeaderCell>
-            <Table.HeaderCell>Valor</Table.HeaderCell>
-            <Table.HeaderCell>Pago</Table.HeaderCell>
-            <Table.HeaderCell>Saldo</Table.HeaderCell>
-          </Table.Row>
-        </Table.Header>
-
+    </Grid.Column>
+    <Grid.Column width={8}>
+    <Segment inverted>
+      <Table inverted celled>
         <Table.Body>
           <Table.Row>
             <Table.Cell>Teste</Table.Cell>
@@ -45,7 +30,9 @@ const TabelaReceitasGastos = () => (
         </Table.Body>
       </Table>
     </Segment>
-  </Segment.Group>
+    </Grid.Column>
+  </Grid.Row>
+  </Grid>
 )
 
 export default TabelaReceitasGastos

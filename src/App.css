@@ -1,3 +1,9 @@
 body{
   background-color: grey !important;
 }
+
+.ui.center.aligned.segment.bottom-fixed{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
